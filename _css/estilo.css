@@ -1,41 +1,186 @@
-body {
-    background-color: white;
-    color: rgba(0,0,0,1);
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+
+@font-face {
+  font-family: "bubblegum-sans-regular";
+  src: url("../_fonts/bubblegum-sans-regular.otf");
 }
+body {
+  background-color: #dddddd;
+  color: rgba(0, 0, 0, 1);
+}
+
+#interface {
+  position: relative;
+  width: calc(100% - 200px);
+  background-color: white;
+  margin: -20px auto 0px auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.596);
+  padding: 10px;
+}
+
 p {
-    text-align: justify;
-    text-indent: 50px;
+  text-align: justify;
+  text-indent: 50px;
+}
+
+#cabecalho {
+  border-bottom: 1px #606060 solid;
+  height: 150px;
+  background-image: url("../_imagens/glass-logo-peq.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 85%;
+}
+
+#cabecalho h1 {
+  font-family: "bubblegum-sans-regular", Arial, Helvetica, sans-serif;
+  font-size: 30pt;
+  color: #606060;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  margin-bottom: 0;
+  padding: 0;
+}
+
+#cabecalho h2 {
+  font-family: "Titillium Web", sans-serif;
+  color: #888888;
+  font-size: 15pt;
+  padding: 0;
+  margin-top: 0;
+}
+
+#icone {
+  position: absolute;
+  left: calc(100% - 150px);
+  top: 80px;
 }
 
 /* Formatação de imagens com legendas */
 
 .foto-legenda {
-    position: relative;
-    border: 8px solid white;
-    box-shadow: 1px 1px 5px black;
-    
+  position: relative;
+  border: 8px solid white;
+  box-shadow: 1px 1px 5px black;
 }
 
 .foto-legenda img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .foto-legenda figcaption {
-    opacity: 0;
-    position: absolute;
-    color: white;
-    top: 0;
-    width:100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.247);    
-    padding: 10px;
-    box-sizing: border-box;
-    transition: opacity 0.5s;
-
+  opacity: 0;
+  position: absolute;
+  color: white;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.247);
+  padding: 10px;
+  box-sizing: border-box;
+  transition: opacity 0.5s;
 }
+
 .foto-legenda figcaption:hover {
-    opacity: 1;
+  opacity: 1;
+}
+
+/* Formatação do menu */
+
+#menu {
+  display: block;
+}
+
+#menu ul {
+  list-style-type: none;
+  text-transform: uppercase;
+  position: absolute;
+  top: -10px;
+  right: 20px;
+}
+
+#menu li {
+  display: inline-block;
+  background-color: #dddddd;
+  padding: 10px;
+  margin: 2px;
+  transition: background-color 0.8s;
+  cursor: pointer;
+}
+
+#menu li:hover {
+  background-color: #606060;
+}
+
+#menu h1 {
+  display: none;
+}
+
+#menu a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+#menu a:hover {
+  color: white;
+}
+
+#corpo {
+  display: block;
+  width: 55%;
+  float: left;
+  border-right: 1px solid #606060;
+  padding-right: 2rem;
+}
+
+#lateral {
+  display: block;
+  width: 40%;
+  float: right;
+}
+
+footer#rodape p {
+  clear: both;
+  border-top: 1px solid #606060;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#tabelaspec {
+  border: 1px solid #606060;
+  border-spacing: 0px;
+  margin: auto;
+}
+
+#tabelaspec td {
+  padding: 10px;
+  border: 1px solid #606060;
+  vertical-align: middle;
+}
+
+.right_col {
+  text-align: left;
+  background-color: #cecece;
+}
+
+#tabelaspec td.left_col {
+  text-align: right;
+  background-color: #606060;
+  color: #ffffff;
+  vertical-align: top;
+  font-weight: bold;
+}
+
+#tabelaspec caption {
+  color: #888888;
+  font-size: 13pt;
+  font-weight: bolder;
+}
+#tabelaspec caption span {
+  font-size: 8pt;
+  float: right;
+  color: black;
+  margin-top: 10px;
 
 
 }
