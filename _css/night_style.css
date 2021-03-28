@@ -5,15 +5,15 @@
   src: url("../_fonts/bubblegum-sans-regular.otf");
 }
 body {
-  background-color: #dddddd;
-  color: rgba(0, 0, 0, 1);
+  background-color: #252525;
+  color: rgb(255, 255, 255);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 #interface {
   position: relative;
   width: calc(100% - 200px);
-  background-color: white;
+  background-color: black;
   margin: -20px auto 0px auto;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.596);
   padding: 10px;
@@ -25,7 +25,7 @@ p {
 }
 
 a {
-  color: #606060;
+  color: #d1cfcf;
   text-decoration: none;
   transition: text-decoration 0.6s;
 }
@@ -40,17 +40,19 @@ a:hover {
 }
 
 #cabecalho {
-  border-bottom: 1px #606060 solid;
+  border-bottom: 1px #d1cfcf solid;
   height: 150px;
   background-image: url("../_imagens/glass-logo-peq.jpg");
+  background-image: url("../_imagens/google-glass-black.jpg");
+  background-size: 31.25%;
   background-repeat: no-repeat;
-  background-position: 0 85%;
+  background-position: -60px 20px;
 }
 
 #cabecalho h1 {
   font-family: "bubblegum-sans-regular", Arial, Helvetica, sans-serif;
   font-size: 30pt;
-  color: #606060;
+  color: #d1cfcf;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
   margin-bottom: 0;
   padding: 0;
@@ -74,7 +76,7 @@ a:hover {
 
 .foto-legenda {
   position: relative;
-  border: 8px solid white;
+  border: 8px solid black;
   box-shadow: 1px 1px 5px black;
 }
 
@@ -86,7 +88,7 @@ a:hover {
 .foto-legenda figcaption {
   opacity: 0;
   position: absolute;
-  color: white;
+  color: black;
   top: 0;
   width: 100%;
   height: 100%;
@@ -116,7 +118,7 @@ a:hover {
 
 #menu li {
   display: inline-block;
-  background-color: #dddddd;
+  background-color: #252525;
   padding: 10px;
   margin: 2px;
   transition: background-color 0.8s;
@@ -124,7 +126,7 @@ a:hover {
 }
 
 #menu li:hover {
-  background-color: #606060;
+  background-color: #d1cfcf;
 }
 
 #menu h1 {
@@ -132,20 +134,20 @@ a:hover {
 }
 
 #menu a {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 #menu a:hover {
-  color: white;
+  color: black;
 }
 
 #corpo {
   display: block;
   width: 54%;
   float: left;
-  border-right: 1px solid #606060;
+  border-right: 1px solid #d1cfcf;
   padding-right: 2rem;
 }
 
@@ -155,8 +157,8 @@ a:hover {
 }
 #noticia-principal > h2 {
   font-size: 12pt;
-  color: #606060;
-  background-color: #dddddd;
+  color: #d1cfcf;
+  background-color: #252525;
   padding: 5px 0px 5px 10px;
   margin: 10px 0px;
 
@@ -165,20 +167,20 @@ a:hover {
 #cabecalho-artigo h1 {
   font-family: "bubblegum-sans-regular", Arial, Helvetica, sans-serif;
   font-size: 20pt;
-  color: #606060;
+  color: #d1cfcf;
   margin-bottom: 0;
   margin-top: 0;
 }
 
 #cabecalho-artigo h2 {
   font-size: 13pt;
-  color: #cecece;
+  color: #ccc8c8;
   margin: 0;
 }
 
 #cabecalho-artigo h3 {
   font-size: 12px;
-  color: #606060;
+  color: #d1cfcf;
 }
 
 #cabecalho-artigo h3:last-child {
@@ -189,7 +191,7 @@ a:hover {
   display: block;
   width: 40%;
   float: right;
-  background-color: #dddddd;
+  background-color: #252525;
   padding: 10px;
   margin-top: 10px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.521);
@@ -199,13 +201,13 @@ a:hover {
   margin-top: 0;
   font-family: "bubblegum-sans-regular" sans-serif;
   font-size: 20pt;
-  color: #606060;
+  color: #d1cfcf;
 }
 
 #lateral h2 {
-  background-color: #606060;
+  background-color: #d1cfcf;
   font-size: 13pt;
-  color: white;
+  color: black;
 }
 
 footer#rodape p {
@@ -219,17 +221,19 @@ footer#rodape p {
   border: 1px solid #606060;
   border-spacing: 0px;
   margin: auto;
+  
 }
 
 #tabelaspec td {
   padding: 10px;
   border: 1px solid #606060;
   vertical-align: middle;
+    
 }
 
 .right_col {
   text-align: left;
-  background-color: #cecece;
+  background-color: #414141;
 }
 
 #tabelaspec td.left_col {
@@ -241,9 +245,9 @@ footer#rodape p {
 }
 
 #tabelaspec caption {
-  color: #888888;
-  font-size: 13pt;
-  font-weight: bolder;
+    color: white;
+    font-size: 13pt;
+    font-weight: bolder;
 }
 #tabelaspec caption span {
   font-size: 8pt;
@@ -283,6 +287,6 @@ footer#rodape p {
 }
 
 #button_alter:hover {
-  background-color: rgba(0, 0, 0, 0.721);
-  color: white;
+  background-color: rgba(255, 255, 255, 0.721);
+  color: black;
 }
