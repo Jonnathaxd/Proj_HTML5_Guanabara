@@ -1,58 +1,115 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Google Glass
-A revolução do Google está chegando
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./_css/estilo.css" />
+    <link rel="stylesheet" href="./_css/form.css" />
+    <title>Tudo sobre Google Glass</title>
+  </head>
+  <body>
+    <div id="interface">
+      <header id="cabecalho">
+        <h1>Google Glass</h1>
+        <h2>A revolução do Google está chegando</h2>
 
-[AQUI ENTRA UMA FOTO]
+        <img id="icone" src="./_imagens/contato.png" alt="Ícone" />
+        <nav id="menu">
+          <h1>Menu Principal</h1>
+          <ul>
+            <li onmouseover="mudaFoto('./_imagens/home.png', this)">
+              <a href="./index.html">Home</a>
+            </li>
+            <li onmouseover="mudaFoto('./_imagens/especificacoes.png', this)">
+              <a href="./specs.html">Especificações</a>
+            </li>
+            <li onmouseover="mudaFoto('./_imagens/fotos.png', this)">
+              <a href="./fotos.html">Fotos</a>
+            </li>
+            <li onmouseover="mudaFoto('./_imagens/multimidia.png', this)">
+              <a href="./multimidia.html">Multimídia</a>
+            </li>
+            <li onmouseover="mudaFoto('./_imagens/contato.png', this)">
+              <a href="./fale-conosco.html">Fale conosco</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <header id="cabecalho-artigo">
+        <h3>Fale Conosco > Contato</h3>
+        <h1>Formulário de Contato</h1>
+        <h2>por Gustavo Guanabara</h2>
+        <h3>Atualizado em 23/Abril/2013</h3>
+      </header>
 
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
+      <form action="/" id='fContato' method="POST" oninput="calc_total()">
+        <fieldset id='usuario'>
+          <legend>Identificação do Usuário</legend>
+              <p><label for="cNome">Nome:</label> <input type="text" name='tNome' id='cNome' size="20" maxlength="30" placeholder="Nome Completo"></p>
+              <p><label for="cSenha">Senha:</label> <input type="password" name='tSenha' id='cSenha' size='8' maxlength="8" placeholder="8 Dígitos"></p>
+              <p><label for="cEmail">E-mail:</label> <input type="email" name="tEmail" id="cEmail" size="20" maxlength='40'></p>
+              <fieldset id='sexo'>
+                <legend>Sexo:</legend>
+                    <input type="radio" name='tSexo' id='cMasc'><label for="cMasc">Masculino</label></input> <br>
+                   <input type="radio" name="tSexo" id="cFem"><label for="cFem">Feminino</label></input>
+              </fieldset>
+              <p><label for="cNasc">Data de Nascimento: <input type="date" name="tNasc" id="cNasc"></label></p>
+        </fieldset>
+        
+        <fieldset id='endereco'>
+          <legend>Endereço do Usuário</legend>
+              <p><label for="cRua">Logradouro: <input type="text" name='tRua' id='cRua' size='13' maxlength="80" placeholder="Rua, Av., Trav...."></label></p>
+              <p><label for="cNum">Número: <input type="number" name='tNum' id='cNum' min='0' max='99999'></label></p>
+              <p><label for="cEst">Estado: </label> <select name="tEst" id="cEst">
+                <option value=""></option>
+                <option value="rj">Rio de Janeiro</option>
+                <optgroup label='Região Nordeste'>
+                  
+                  <option value="al">Alagoas</option>
+                </optgroup>
+                <option value="sp">São Paulo</option>
+              </select></p>
+              
+              <p><label for="cCid">Cidade: <input list ='cidades'type="text" size="20" maxlength='40' placeholder="Sua Cidade"></label></p>
+      <datalist id='cidades'>        
+        <option value="Rio de Janeiro"></option>
+        <option value="Nova Iguaçu"></option>
+      </datalist>
+            </fieldset>
+        
+        <fieldset id='mensagem'>
+          <legend>Mensagem do Usuário</legend>
+              <p><label for="cUrge">Grau de Urgência: Min<input type="range" name='tUrg' id='cUrg' min='0' max='10'>Max</label></p>
+              <p><label for="cMen">Mensagem: <textarea name="tMen" id="cMen" cols="45" rows="5" placeholder="Deixe sua mensagem"></textarea></label></p>
+        </fieldset>
+        
+        <fieldset id='pedido'>
+          <legend>Quero um Google Glass</legend>  
+              <p><input type="checkbox" name="tPed" id="cPed" checked>
+                <label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label></p>
+              <p><label for="cColor">Cor: <input type="color" name="tColor" id="cColor"></label></p>
+              <p><label for="cQtd">Quantidade: <input type="number" name="tQtd" id="cQtd" min='0' max='5' value='0'> </label></p>
+              <p><label for="cTot">Preço Total: R$</label><input type="text" name='tTot' id='cTot' placeholder="Total a Pagar" readonly></p>
+        </fieldset>
+        <input type="image" src='_imagens/botao-enviar.png' name='tEnviar' value="Enviar">
 
-Fale Conosco > Contato
-Formulário de Contato
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
-
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
-
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
-
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
-
-Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
+      <footer id="rodape">
+        <p>
+          Copyright 2013 - by Gustavo Guanabara <br />
+          <a href="">Facebook</a> |<a href="">Twitter</a>
+        </p>
+      </footer>
+    </div>
+    <script src="./_javascript/funcoes.js"></script>
+  </body>
+  </html>
 
 
-[BOTÃO ENVIAR]
 
-Copyright 2013 - by Gustavo Guanabara
-Facebook | Twitter
-</body>
-</html>
+
+
+
+
+
+

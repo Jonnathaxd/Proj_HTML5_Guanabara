@@ -1,34 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Google Glass
-A revolução do Google está chegando
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./_css/estilo.css" />
+    <link rel="stylesheet" href="./_css/specs.css" />
+    <title>Tudo sobre Google Glass</title>
+  </head>
+  <body>
+    <div id="interface">
+      <header id="cabecalho">
+        <h1>Google Glass</h1>
+        <h2>A revolução do Google está chegando</h2>
 
-[AQUI ENTRA UMA FOTO]
+        <img id="icone" src="./_imagens/especificacoes.png" alt="Ícone" />
+        <nav id="menu">
+          <h1>Menu Principal</h1>
+          <ul>
+            <li onmouseover="mudaFoto('./_imagens/home.png', this)">
+              <a href="./index.html">Home</a>
+            </li>
+            <li onmouseover="mudaFoto('./_imagens/especificacoes.png', this)">
+              <a href="./specs.html">Especificações</a>
+            </li>
+            <li onmouseover="mudaFoto('./_imagens/fotos.png', this)">
+              <a href="./fotos.html">Fotos</a>
+            </li>
+            <li onmouseover="mudaFoto('./_imagens/multimidia.png', this)">
+              <a href="./multimidia.html">Multimídia</a>
+            </li>
+            <li onmouseover="mudaFoto('./_imagens/contato.png', this)">
+              <a href="./fale-conosco.html">Fale conosco</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
+      <section id="corpo-full">
+        <header id="cabecalho-artigo">
+          <h3>Glass > Especificações</h3>
+          <h1>Raio-X no Google Glass</h1>
+          <h2>por Gustavo Guanabara</h2>
+          <h3>Atualizado em 23/Abril/2013</h3>
+        </header>
 
-Glass > Especificações
-Raio-X no Google Glass
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+        <p>
+          Clique em qualquer área destacada da imagem para ter mais informações
+          sobre os recursos do Google Glass. Qualquer ponto vermelho vai te
+          levar a um lugar cheio de novas informações.
+        </p>
+        <section id="conteudo">
+          <img
+            src="./_imagens/glass-esquema-marcado.jpg"
+            alt="Esquema de Óculos Google Glass"
+            usemap="#meumap"
+          />
+          <map name="meumap">
+            <area
+              shape="poly"
+              coords="183,220,265,208,266,242,186,254"
+              href="google-glass.html#tela"
+              target="janela"
+            />
+            <area
+              shape="circle"
+              coords="158,243,11"
+              href="google-glass.html#camera"
+              target="janela"
+            />
+            <area
+              shape="circle"
+              coords="76,53,10"
+              href="google-glass.html#bateria"
+              target="janela"
+            />
+            <area
+              shape="poly"
+              coords="28,148,80,215,83,250,27,167"
+              href="google-glass.html#sensores"
+              target="janela"
+            />
+          </map>
 
-Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.
+          <iframe
+            src="./google-glass.html"
+            name="janela"
+            id="frame-spec"
+          ></iframe>
+        </section>
+      </section>
 
-[AQUI ENTRA UMA IMAGEM]
-
-Copyright 2013 - by Gustavo Guanabara<
-Facebook | Twitter
-</body>
+      <footer id="rodape">
+        <p>
+          Copyright 2013 - by Gustavo Guanabara <br />
+          <a href="">Facebook</a> |<a href="">Twitter</a>
+        </p>
+      </footer>
+    </div>
+    <script src="./_javascript/funcoes.js"></script>
+  </body>
 </html>
