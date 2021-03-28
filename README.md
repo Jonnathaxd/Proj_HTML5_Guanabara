@@ -1,6 +1,6 @@
 <h1 align='right'><img src='./_imagens/glass-logo-peq.jpg'></img></h1>
 
-
+<h1><img src='./_imagens/exemplo.gif'></img></h1>
 ## 📋Sobre
 
 O **Projeto Google** Glass foi criado dentro do curso do **Guanabara ("Curso em vídeo")** com o intuido de demonstrar o básico de html, css e js. 

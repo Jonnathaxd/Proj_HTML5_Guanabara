@@ -1,11 +1,5 @@
 window.onload = () => {
-  let imagem_fixada = document.getElementById("icone").src;
-  function mudaFoto(src, li) {
-    document.getElementById("icone").src = src;
-    li.addEventListener("mouseout", () => {
-      document.getElementById("icone").src = imagem_fixada;
-    });
-  }
+  
   if (localStorage.getItem("modo") == null) {
     localStorage.setItem("modo", "claro");
   }
@@ -15,6 +9,13 @@ window.onload = () => {
     document.getElementById("modo").href = "./_css/estilo.css";
   }
 };
+let imagem_fixada = document.getElementById("icone").src;
+  function mudaFoto(src, li) {
+    document.getElementById("icone").src = src;
+    li.addEventListener("mouseout", () => {
+      document.getElementById("icone").src = imagem_fixada;
+    });
+  }
 
 function calc_total() {
   let nValor = Number(document.getElementById("cQtd").value);
