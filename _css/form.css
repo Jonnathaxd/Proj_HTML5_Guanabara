@@ -53,3 +53,10 @@ fieldset {
   background: url("../_imagens/icone-pagamento.png") no-repeat;
   background-position: center;
 }
+
+#button {
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
