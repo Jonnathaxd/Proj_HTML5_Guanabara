@@ -1,4 +1,4 @@
-<h1 align='right'>[<img src='./_imagens/glass-logo-peq.jpg'></img>]('https://www.google.com/glass/start/')</h1>
+<h1 align='right'><img src='./_imagens/glass-logo-peq.jpg'></img></h1>
 
 
 ## 📋Sobre
