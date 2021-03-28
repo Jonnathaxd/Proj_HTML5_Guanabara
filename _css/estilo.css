@@ -149,12 +149,17 @@ a:hover {
   padding-right: 2rem;
 }
 
+#noticia-principal {
+  box-sizing: border-box;
+  overflow: hidden;
+}
 #noticia-principal > h2 {
   font-size: 12pt;
   color: #606060;
   background-color: #dddddd;
   padding: 5px 0px 5px 10px;
   margin: 10px 0px;
+
 }
 
 #cabecalho-artigo h1 {
@@ -245,4 +250,19 @@ footer#rodape p {
   float: right;
   color: black;
   margin-top: 10px;
+}
+
+#vd1 {
+  display: block;
+  position: relative;
+  margin: 40px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: calc(100% - 40px);
+}
+
+#vd2 {
+  width: 100%;
+  border-radius: 10px;
+
 }
